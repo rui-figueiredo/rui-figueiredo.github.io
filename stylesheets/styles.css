@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
+
 body {
   padding:50px;
-  font:18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:21px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#333;
   font-weight:300;
 }
@@ -34,8 +35,12 @@ h3, h4, h5, h6 {
 
 a {
   color:#39c;
-  font-weight:400;
   text-decoration:none;
+}
+
+a:hover {
+  background: #39c;
+  color: white;
 }
 
 a small {
@@ -47,7 +52,7 @@ a small {
 
 .wrapper {
   width:860px;
-  margin:0 auto;
+  margin:8% auto 0;
 }
 
 blockquote {
@@ -93,10 +98,11 @@ th {
 
 img {
   max-width:100%;
+  border-radius: 50%;
 }
 
 header {
-  width:270px;
+  width:280px;
   float:left;
   position:fixed;
 }
@@ -162,6 +168,7 @@ header ul a strong {
 section {
   width:500px;
   float:right;
+  padding-top: 52px;
   padding-bottom:50px;
 }
 
@@ -181,6 +188,24 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
+}
+
+/* Custom */
+.my-face {
+  padding: 0 15px;
+}
+.cta {
+
+  color: #39c;
+  border: 2px solid #39c;
+  margin: 0 2px;
+  padding: 4px 6px 6px;
+}
+
+.cta:hover {
+  background: #39c;
+  color: white;
+  border-color: transparent;
 }
 
 @media print, screen and (max-width: 960px) {
