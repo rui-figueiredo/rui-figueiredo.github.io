@@ -23,6 +23,7 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
+  margin: 0;
 }
 
 h2 {
@@ -83,21 +84,21 @@ table {
 
 th, td {
   text-align:left;
-  padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 dt {
-  color:#444;
-  font-weight:700;
+  color: #444;
+  font-weight: 700;
 }
 
 th {
-  color:#444;
+  color: #444;
 }
 
 img {
-  max-width:100%;
+  max-width: 85%;
   border-radius: 50%;
 }
 
@@ -168,8 +169,7 @@ header ul a strong {
 section {
   width:500px;
   float:right;
-  padding-top: 52px;
-  padding-bottom:50px;
+  padding: 80px 0;
 }
 
 small {
@@ -191,9 +191,6 @@ footer {
 }
 
 /* Custom */
-.my-face {
-  padding: 0 15px;
-}
 .cta {
 
   color: #39c;
@@ -208,11 +205,12 @@ footer {
   border-color: transparent;
 }
 
+/* Media Queries */
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
-    width:auto;
-    margin:0;
+    width: 380px;
+    margin: 0 auto;
   }
 
   header, section, footer {
@@ -222,7 +220,14 @@ footer {
   }
 
   header {
-    padding-right:320px;
+    position: relative;
+  }
+
+  .my-face img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 110px;
   }
 
   section {
@@ -266,8 +271,16 @@ footer {
     padding:15px;
   }
 
+  div.wrapper {
+    width: auto;
+  }
+
   header ul {
     display:none;
+  }
+
+  .my-face img {
+    width: 60px;
   }
 }
 
